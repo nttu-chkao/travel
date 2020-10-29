@@ -12,11 +12,14 @@
    crossorigin=""></script>
 
 <style>
-html, body, #map{ height: 100%;}
+html, body {height: 97%;}
+#map {height: 100%;}
+#word {position: absolute;top: 0px;right: 10px;z-index: 999}
 </style>
 </head>
 
 <body>
+<div id="word"><h2>Where do you want to go after COVID-19?</h2></div>
 <div id="map"></div>
 <script>
 //var map = L.map('map').setView([23.4696887, 117.8403113], 3);
@@ -72,6 +75,9 @@ L.marker([22.9995297,120.2167893]).addTo(map)
 
 L.marker([25.0403416,121.5198405]).addTo(map)
     .bindPopup('台北: Festum Qin')
+
+L.marker([42.9850407,140.9677976]).addTo(map)
+    .bindPopup('札幌: Chia Hung Kao')
 
 </script>
 </body>
