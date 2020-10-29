@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel after COVID-19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+<style>
+html, body, #map{ height: 100%;}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+<script>
+//var map = L.map('map').setView([23.4696887, 117.8403113], 3);
+var map = L.map('map').setView([23.4696887, 31], 2);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([25.048493, 121.509338]).addTo(map)
+    .bindPopup('祖師廟焢肉飯: 呂欣澤')
+
+L.marker([34.665442, 135.4301495]).addTo(map)
+    .bindPopup('環球影城任天堂世界: Wayne Yeh, Jack Jeng')
+
+L.marker([50.0748399,14.4181706]).addTo(map)
+    .bindPopup('布拉格: Cindy Su')
+
+L.marker([55.5807481,36.8251304]).addTo(map)
+    .bindPopup('莫斯科: Chiu Yi-Hsuan')
+
+L.marker([30.567816,114.0201949]).addTo(map)
+    .bindPopup('武漢: 吳思宏')
+
+L.marker([15.783471,-90.230759]).addTo(map)
+    .bindPopup('瓜地馬拉: 李佳穎')
+
+L.marker([22.6663237,120.4469008]).addTo(map)
+    .bindPopup('屏東: Luke Sun')
+
+L.marker([26.3605498,127.7439431]).addTo(map)
+    .bindPopup('沖繩: Stanley Liu')
+
+L.marker([35.6812362,139.7649361]).addTo(map)
+    .bindPopup('東京: 林嘉欣, 吳宛蓁, PeiWen Chiang, 黄 なるみ, Vivida Huang, 陳證瑋, Zoe Tsai')
+
+L.marker([48.8583701,2.2922926]).addTo(map)
+    .bindPopup('巴黎: PeiWen Chiang, Zoe Tsai')
+
+L.marker([51.5020132,-0.1242782]).addTo(map)
+    .bindPopup('倫敦: 紀政宏')
+
+L.marker([37.5637733,126.8340023]).addTo(map)
+    .bindPopup('首爾: 黄 なるみ')
+
+L.marker([40.4237054,-86.9233833]).addTo(map)
+    .bindPopup('Purdue University: Heidi Chang')
+
+L.marker([21.2973159,-157.8220981]).addTo(map)
+    .bindPopup('夏威夷: Pei-Luen Stacy Lu')
+
+L.marker([22.9995297,120.2167893]).addTo(map)
+    .bindPopup('台南: 高毅哲')
+
+L.marker([25.0403416,121.5198405]).addTo(map)
+    .bindPopup('台北: Festum Qin')
+
+</script>
+</body>
+</html>
